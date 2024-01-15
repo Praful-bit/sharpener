@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making an Expense tracker app with local storage integration</title>
+</head>
+<body>
+    <form id="form" onsubmit="handleFormSubmit(event)">
+        <label for="ammount">Choose Expense Ammount:</label>
+        <input type="number" id="ammount">
+        <label for="des">Discription:</label>
+        <input type="text" id="des">
+        <label for="cate">Choose Category:</label>
+        <select id="cate">
+            <option value="Movie">Movie</option>
+            <option value="Audi">Audi</option>
+            <option value="Cold Drink">Cold Drink</option>
+            <option value="Mobile">Mobile</option>
+          </select>
+       <button>Add Expense</button>
+      
+    </form>
+    <ul id="userList"></ul>
+    <script src="tracker.js"></script>
+</body>
+</html>
