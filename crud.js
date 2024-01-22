@@ -63,7 +63,7 @@ function loadExistingUsers() {
             existingUsers.forEach(displayUserOnScreen);
         })
         .catch((err) => {
-            console.error(err);
+            console.log(err);
         });
 }
 function deleteExpense(userId, userItem) {
@@ -73,7 +73,7 @@ function deleteExpense(userId, userItem) {
             userItem.remove(); 
         })
         .catch((err) => {
-            console.error(err);
+            console.log(err);
         });
 }
 
@@ -90,10 +90,9 @@ function updateExpense(userId) {
             // Implement logic to update the UI with the edited details
         })
         .catch((err) => {
-            console.error(err);
+            console.log(err);
         });
 }
 
 window.addEventListener('load', loadExistingUsers);
 
-module.exports = handleFormSubmit;
